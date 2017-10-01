@@ -10,3 +10,5 @@ show the month:
 show the year:
 
 &lt;field name="year" options='{"minViewMode": "years", "viewMode": "years", "format": "YYYY"}'/&gt;
+
+
