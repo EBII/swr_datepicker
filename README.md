@@ -7,9 +7,26 @@ show the month:
 
 &lt;field name="month" options='{"minViewMode": "months", "viewMode": "months", "format": "MM/YYYY"}'/&gt;
 
+form view
+
+![donation-wechatpay](/doc/pic/month.png)
+
+tree view
+
+![donation-wechatpay](/doc/pic/month_list.png)
+
 show the year:
 
 &lt;field name="year" options='{"minViewMode": "years", "viewMode": "years", "format": "YYYY"}'/&gt;
+
+
+form view
+
+![donation-wechatpay](/doc/pic/year.png)
+
+tree view
+
+![donation-wechatpay](/doc/pic/year_list.png)
 
 ## Donation
 
