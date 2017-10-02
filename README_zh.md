@@ -1,28 +1,28 @@
 # swr_datepicker
-Odoo native date controls are extended to support year and date input and display
+Odoo原生日期控件的扩展，支持月份和年份的显示
 
-For example: month and year is Date type field
+举例: month 和 year 是日期型字段
 
-show the month:
+显示成月份:
 
-&lt;field name="month" options='{"minViewMode": "months", "viewMode": "months", "format": "MM/YYYY"}'/&gt;
+&lt;field name="month" options='{"minViewMode": "months", "viewMode": "months", "format": "YYYY年MM月"}'/&gt;
 
-show the year:
+显示成年份:
 
-&lt;field name="year" options='{"minViewMode": "years", "viewMode": "years", "format": "YYYY"}'/&gt;
+&lt;field name="year" options='{"minViewMode": "years", "viewMode": "years", "format": "YYYY年"}'/&gt;
 
-## Donation
+## 感谢捐赠
 
-If swr_datepicker help you a lot, you can support us by:
+如果swr_datepicker对你有帮助，你可以通过以下方式联系或捐赠我:
 
 QQ : 306852160
 
 E-mail : 306852160@qq.com
 
-### AliPay
+### 支付宝
 
 ![donation-alipay](/doc/pic/AliPay.jpg)
 
-### Wechat Pay
+### 微信
 
 ![donation-wechatpay](/doc/pic/WechatPay.jpg)
