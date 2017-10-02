@@ -7,9 +7,25 @@ Odoo原生日期控件的扩展，支持月份和年份的显示
 
 &lt;field name="month" options='{"minViewMode": "months", "viewMode": "months", "format": "YYYY年MM月"}'/&gt;
 
+表单视图效果
+
+![donation-wechatpay](/doc/pic/month_c.png)
+
+列表视图效果
+
+![donation-wechatpay](/doc/pic/month_list_c.png)
+
 显示成年份:
 
 &lt;field name="year" options='{"minViewMode": "years", "viewMode": "years", "format": "YYYY年"}'/&gt;
+
+表单视图效果
+
+![donation-wechatpay](/doc/pic/year_c.png)
+
+列表视图效果
+
+![donation-wechatpay](/doc/pic/year_list_c.png)
 
 ## 感谢捐赠
 
