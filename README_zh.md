@@ -1,5 +1,12 @@
 # swr_datepicker
+
+[README](README.md) | [中文文档](README_zh.md)
+
+## 什么是swr_datepicker?
+
 Odoo原生日期控件的扩展，支持月份和年份的显示
+
+## 示例
 
 举例: month 和 year 是日期型字段
 
