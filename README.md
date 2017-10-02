@@ -1,5 +1,12 @@
 # swr_datepicker
+
+[README](README.md) | [中文文档](README_zh.md)
+
+## What is swr_datepicker?
+
 Odoo native date controls are extended to support year and date input and display
+
+## Example Usage
 
 For example: month and year is Date type field
 
