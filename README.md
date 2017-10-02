@@ -11,4 +11,18 @@ show the year:
 
 &lt;field name="year" options='{"minViewMode": "years", "viewMode": "years", "format": "YYYY"}'/&gt;
 
+## Donation
 
+If swr_datepicker help you a lot, you can support us by:
+
+QQ : 306852160
+
+E-mail : 306852160@qq.com
+
+### AliPay
+
+![donation-alipay](/doc/pic/AliPay.jpg)
+
+### Wechat Pay
+
+![donation-wechatpay](/doc/pic/WechatPay.jpg)
