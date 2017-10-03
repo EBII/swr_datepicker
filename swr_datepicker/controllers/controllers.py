@@ -1,18 +1,12 @@
 # -*- coding: utf-8 -*-
 
-from odoo import api, http, SUPERUSER_ID, _
-from odoo.http import request
-from odoo.modules.registry import RegistryManager
-from odoo.http import Root
-import werkzeug
-import base64
-import time
-import json
-import logging
-import requests
 import itertools
+import logging
 import operator
+
 import odoo.addons.web.controllers.main as main
+from odoo import http
+from odoo.http import request
 
 _logger = logging.getLogger(__name__)
 

@@ -1,15 +1,9 @@
 # -*- coding: utf-8 -*-
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
-import json
-import locale
 import logging
-import re
-from operator import itemgetter
 
-from odoo import api, fields, models, tools, _
-from odoo.tools.safe_eval import safe_eval
-from odoo.exceptions import UserError, ValidationError
+from odoo import fields, models
 
 _logger = logging.getLogger(__name__)
 
