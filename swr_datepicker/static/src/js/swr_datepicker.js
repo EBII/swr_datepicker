@@ -11,12 +11,13 @@ var _t = core._t;
 DatePicker.DateWidget.include({
         init: function (parent, options) {
             this._super.apply(this, arguments);
-            var l10n = _t.database.parameters;
             var _options = {};
             if (parent.options.showType==="months" || parent.options.showType==="years") {
+                var l10n = _t.database.parameters;
+                _options.showType = parent.options.showType;
                 _options.viewMode = parent.options.showType;
                 _options.minViewMode = parent.options.showType;
-                _options.format = time.strftime_to_moment_format((parent.options.showType==="month")? l10n.month_format : l10n.year_format)
+                _options.format = time.strftime_to_moment_format((parent.options.showType==="months")? l10n.month_format : l10n.year_format)
             }
             this.options = _.defaults(_options || {}, this.options)
         }
@@ -44,7 +45,7 @@ odoo.define('swr.web.formats', function (require) {
             if (typeof options === 'object'){
                 if (value && (options.showType === 'months' || options.showType === 'years')){
                     var l10n = _t.database.parameters;
-                    var _format = time.strftime_to_moment_format(options.showType === 'months'? l10n.month_format : l10n.year_format);
+                    var _format = time.strftime_to_moment_format((options.showType==="months")? l10n.month_format : l10n.year_format)
                     return moment(value).format(_format);
                 }
             }
@@ -54,12 +55,12 @@ odoo.define('swr.web.formats', function (require) {
 
     webFormats.parse_value = function (value, descriptor, value_if_empty) {
         var options = descriptor.options;
-        if ((descriptor.widget || descriptor.type || (descriptor.field && descriptor.field.type)) == 'date'){
-            if (typeof options == 'string') {
+        if ((descriptor.widget || descriptor.type || (descriptor.field && descriptor.field.type)) === 'date'){
+            if (typeof options === 'string') {
                 options = eval('(' + options + ')')
             }
-            if (typeof options == 'object'){
-                if (options.viewMode == 'months' || options.viewMode == 'years'){
+            if (typeof options === 'object'){
+                if (options.showType === 'months' || options.showType === 'years'){
                     var l10n = _t.database.parameters;
                     var _format = time.strftime_to_moment_format(options.showType === 'months'? l10n.month_format : l10n.year_format);
                     var date_pattern = _format;
