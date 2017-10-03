@@ -1,21 +1,11 @@
 # -*- coding: utf-8 -*-
 
-from odoo import api, http, SUPERUSER_ID, _
-from odoo.http import request
-from odoo.modules.registry import RegistryManager
-from odoo.http import Root
-import werkzeug
-import base64
-import time
-import json
-import logging
-import requests
 import itertools
 import operator
 import odoo.addons.web.controllers.main as main
 
-_logger = logging.getLogger(__name__)
-
+from odoo import http
+from odoo.http import request
 
 class Extension(main.WebClient):
     @http.route('/web/webclient/translations', type='json', auth="none")
