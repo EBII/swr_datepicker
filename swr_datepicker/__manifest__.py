@@ -6,7 +6,7 @@
     'summary': 'Tools',
     'description': """
     
-    Odoo native date controls are extended to support year and date input and display
+    Odoo native date controls are extended to support year and month input and display
 ==========================================
 
     """,
