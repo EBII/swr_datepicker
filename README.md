@@ -12,28 +12,28 @@ For example: month and year is Date type field
 
 show the month:
 
-&lt;field name="month" options='{"minViewMode": "months", "viewMode": "months", "format": "MM/YYYY"}'/&gt;
+&lt;field name="month" options='{"showType": "months"}'/&gt;
 
 form view
 
-![donation-wechatpay](/doc/pic/month.png)
+![donation-month](/doc/pic/month.png)
 
 tree view
 
-![donation-wechatpay](/doc/pic/month_list.png)
+![donation-month-list](/doc/pic/month_list.png)
 
 show the year:
 
-&lt;field name="year" options='{"minViewMode": "years", "viewMode": "years", "format": "YYYY"}'/&gt;
+&lt;field name="year" options='{"showType": "years"}'/&gt;
 
 
 form view
 
-![donation-wechatpay](/doc/pic/year.png)
+![donation-year](/doc/pic/year.png)
 
 tree view
 
-![donation-wechatpay](/doc/pic/year_list.png)
+![donation-year-list](/doc/pic/year_list.png)
 
 ## Donation
 
