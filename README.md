@@ -4,7 +4,9 @@
 
 ## What is swr_datepicker?
 
-Odoo native date controls are extended to support year and date input and display
+1. odoo native date controls are extended to support year and date input and display
+
+2. support multi-languauge
 
 ## Example Usage
 
