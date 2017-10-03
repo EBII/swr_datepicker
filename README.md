@@ -16,11 +16,11 @@ show the month:
 
 form view
 
-![donation-month](/doc/pic/month.png)
+![donation-month](/swr_datepicker/static/description/pic/month.png)
 
 tree view
 
-![donation-month-list](/doc/pic/month_list.png)
+![donation-month-list](/swr_datepicker/static/description/pic/month_list.png)
 
 show the year:
 
@@ -29,11 +29,11 @@ show the year:
 
 form view
 
-![donation-year](/doc/pic/year.png)
+![donation-year](/swr_datepicker/static/description/pic/year.png)
 
 tree view
 
-![donation-year-list](/doc/pic/year_list.png)
+![donation-year-list](/swr_datepicker/static/description/pic/year_list.png)
 
 ## Donation
 
@@ -45,8 +45,8 @@ E-mail : 306852160@qq.com
 
 ### AliPay
 
-![donation-alipay](/doc/pic/AliPay.jpg)
+![donation-alipay](/swr_datepicker/static/description/pic/AliPay.jpg)
 
 ### Wechat Pay
 
-![donation-wechatpay](/doc/pic/WechatPay.jpg)
+![donation-wechatpay](/swr_datepicker/static/description/pic/WechatPay.jpg)
