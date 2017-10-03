@@ -1,0 +1,6 @@
+.bootstrap-datetimepicker-widget td.disabled,
+.bootstrap-datetimepicker-widget td.disabled:hover {
+  background: none;
+  color: #ccc;
+  cursor: not-allowed;
+}

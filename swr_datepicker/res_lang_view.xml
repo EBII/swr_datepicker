@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="res_lang_form_datepicker" model="ir.ui.view">
+            <field name="name">res.lang.form</field>
+            <field name="model">res.lang</field>
+            <field name="inherit_id" ref="base.res_lang_form"/>
+            <field name="arch" type="xml">
+                <field name="date_format" position="before">
+                    <field name="year_format"/>
+                    <field name="month_format"/>
+                </field>
+            </field>
+        </record>
+    </data>
+</odoo>

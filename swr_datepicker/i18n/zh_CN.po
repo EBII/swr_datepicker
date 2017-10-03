@@ -1,0 +1,40 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* swr_datepicker
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0+e-20170305\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-10-03 03:33+0000\n"
+"PO-Revision-Date: 2017-10-03 03:33+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: swr_datepicker
+#. openerp-web
+#: code:addons/swr_datepicker/static/src/js/swr_datepicker.js:67
+#: code:addons/swr_datepicker/static/src/js/swr_datepicker.js:79
+#, python-format
+msgid "'%s' is not a correct date"
+msgstr "'%s' 格式错，不是正确的日期"
+
+#. module: swr_datepicker
+#: model:ir.model,name:swr_datepicker.model_res_lang
+msgid "Languages"
+msgstr "语言"
+
+#. module: swr_datepicker
+#: model:ir.model.fields,field_description:swr_datepicker.field_res_lang_month_format
+msgid "Month Format"
+msgstr "月份格式"
+
+#. module: swr_datepicker
+#: model:ir.model.fields,field_description:swr_datepicker.field_res_lang_year_format
+msgid "Year Format"
+msgstr "年份格式"
+
