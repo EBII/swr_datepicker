@@ -1,15 +1,11 @@
 # -*- coding: utf-8 -*-
 
 import itertools
-import logging
 import operator
-
 import odoo.addons.web.controllers.main as main
+
 from odoo import http
 from odoo.http import request
-
-_logger = logging.getLogger(__name__)
-
 
 class Extension(main.WebClient):
     @http.route('/web/webclient/translations', type='json', auth="none")

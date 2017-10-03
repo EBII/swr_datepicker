@@ -1,15 +1,10 @@
 # -*- coding: utf-8 -*-
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
-import logging
-
 from odoo import fields, models
-
-_logger = logging.getLogger(__name__)
 
 DEFAULT_YEAR_FORMAT = '%Y'
 DEFAULT_MONTH_FORMAT = '%m/%Y'
-
 
 class Lang(models.Model):
     _inherit = "res.lang"
