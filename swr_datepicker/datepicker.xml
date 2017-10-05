@@ -2,7 +2,6 @@
 <odoo>
     <template id="assets_backend" name="swr_datepicker assets" inherit_id="web.assets_backend">
         <xpath expr="." position="inside">
-             <link href="/swr_datepicker/static/src/css/datepicker.css" rel="stylesheet" type="text/css"></link>
             <script type="text/javascript" src="/swr_datepicker/static/src/js/swr_datepicker.js"></script>
         </xpath>
     </template>
