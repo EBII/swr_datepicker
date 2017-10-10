@@ -40,7 +40,11 @@ odoo.define('swr.web.formats', function (require) {
         var options = descriptor.options;
         if ((descriptor.widget || descriptor.type || (descriptor.field && descriptor.field.type)) === 'date'){
             if (typeof options === 'string') {
-                options = eval('(' + options + ')')
+                try {
+                    options = JSON.parse(options)
+                } catch(e) {
+                    console.log(e)
+                }
             }
             if (typeof options === 'object'){
                 if (value && (options.showType === 'months' || options.showType === 'years')){
@@ -57,7 +61,11 @@ odoo.define('swr.web.formats', function (require) {
         var options = descriptor.options;
         if ((descriptor.widget || descriptor.type || (descriptor.field && descriptor.field.type)) === 'date'){
             if (typeof options === 'string') {
-                options = eval('(' + options + ')')
+                 try {
+                    options = JSON.parse(options)
+                 } catch(e) {
+                    console.log(e)
+                 }
             }
             if (typeof options === 'object'){
                 if (options.showType === 'months' || options.showType === 'years'){
