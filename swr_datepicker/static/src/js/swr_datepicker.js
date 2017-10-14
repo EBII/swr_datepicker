@@ -20,6 +20,12 @@ DatePicker.DateWidget.include({
                 _options.format = time.strftime_to_moment_format((parent.options.showType==="months")? l10n.month_format : l10n.year_format)
             }
             this.options = _.defaults(_options || {}, this.options)
+        },
+        format_client: function(v) {
+            return formats.format_value(v, {"widget": this.type_of_date, "options": this.options});
+        },
+        parse_client: function(v) {
+            return formats.parse_value(v, {"widget": this.type_of_date, "options": this.options});
         }
     });
 return DatePicker;
