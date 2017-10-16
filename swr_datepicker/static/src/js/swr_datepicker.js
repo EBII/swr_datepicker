@@ -12,7 +12,7 @@ DatePicker.DateWidget.include({
         init: function (parent, options) {
             this._super.apply(this, arguments);
             var _options = {};
-            if (parent.options.showType==="months" || parent.options.showType==="years") {
+            if (parent.options && (parent.options.showType==="months" || parent.options.showType==="years")) {
                 var l10n = _t.database.parameters;
                 _options.showType = parent.options.showType;
                 _options.viewMode = parent.options.showType;
