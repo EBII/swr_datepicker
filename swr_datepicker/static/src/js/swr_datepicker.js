@@ -91,7 +91,9 @@ odoo.define('swr.web.formats', function (require) {
                             return time.date_to_str(date.toDate());
                         }
                     }
-                    throw new Error(_.str.sprintf(_t("'%s' is not a correct date"), value));
+                    if(value){
+                        throw new Error(_.str.sprintf(_t("'%s' is not a correct date"), value));
+                    }
                 }
             }
         }
