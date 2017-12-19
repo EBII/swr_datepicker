@@ -2,7 +2,7 @@
 
 {
     'name': 'swr_datepicker',
-    'version': '1.2',
+    'version': '1.3',
     'summary': 'Tools',
     'description': """
     
