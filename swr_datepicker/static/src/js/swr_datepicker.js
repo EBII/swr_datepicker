@@ -65,46 +65,48 @@ function parseDate(value, field, options) {
 }
 
 DatePicker.DateWidget.include({
-        init: function (parent, options) {
-            this._super.apply(this, arguments);
-            var _options = {};
-            if (parent.nodeOptions && (parent.nodeOptions.showType === "months" || parent.nodeOptions.showType === "years")) {
-                var l10n = _t.database.parameters;
-                _options.viewMode = parent.nodeOptions.showType;
-                _options.format = getLangDateFormat(parent.nodeOptions)
-            }
-            this.options = _.defaults(_options || {}, this.options)
-            this.showType = this.options.viewMode;
-        },
-        _formatClient: function(v) {
-            if (this.type_of_date === 'datetime') {
-                return this._super.apply(this, arguments);
-            }
-            return formatDate(v, null, {
-                timezone: false,
-                showType: this.showType
-            });
-        },
-        _parseClient: function(v) {
-            if (this.type_of_date === 'datetime') {
-                return this._super.apply(this, arguments);
-            }
-            return parseDate(v, null, {
-                timezone: false,
-                showType: this.showType
-            });
-        },
-    });
+    init: function(parent, options) {
+        this._super.apply(this, arguments);
+        var _options = {};
+        if (parent.nodeOptions && (parent.nodeOptions.showType === "months" || parent.nodeOptions.showType === "years")) {
+            var l10n = _t.database.parameters;
+            _options.viewMode = parent.nodeOptions.showType;
+            _options.format = getLangDateFormat(parent.nodeOptions)
+        }
+        this.options = _.defaults(_options || {}, this.options)
+        this.showType = this.options.viewMode;
+    },
+    _formatClient: function(v) {
+        if (this.type_of_date === 'datetime') {
+            return this._super.apply(this, arguments);
+        }
+        return formatDate(v, null, {
+            timezone: false,
+            showType: this.showType
+        });
+    },
+    _parseClient: function(v) {
+        if (this.type_of_date === 'datetime') {
+            return this._super.apply(this, arguments);
+        }
+        return parseDate(v, null, {
+            timezone: false,
+            showType: this.showType
+        });
+    },
+});
 
 
 basic_fields.FieldDate.include({
     _formatValue: function(value) {
+        if (this.formatType != 'date') {
+            return this._super.apply(this, arguments)
+        }
         var options = _.extend({}, this.nodeOptions, {
             data: this.recordData
         }, this.formatOptions);
         return formatDate(value, this.field, options);
     },
-
 });
 
 });
